@@ -1,0 +1,71 @@
+[
+  {
+    "title": "CAT: Enhancing Multimodal Large Language Model to Answer Questions in Dynamic Audio-Visual Scenarios",
+    "authors": "<strong>Qilang Ye</strong>, Zitong Yu, Rui Shao, Xinyu Xie, Philip Torr, Xiaochun Cao",
+    "venue": "European Conference on Computer Vision (ECCV), 2024.",
+    "year": "2024",
+    "highlight": "",
+    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
+    "tags": [
+      { "text": "paper", "link": "#" },
+      { "text": "Code", "link": "#" }
+    ]
+  },
+  {
+    "title": "CAT+: Investigating and Enhancing Audio-visual Understanding in Large Language Models",
+    "authors": "<strong>Qilang Ye</strong>, Zitong Yu, Xin Liu",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025.3582389",
+    "year": "2025",
+    "highlight": "",
+    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
+    "tags": [
+      { "text": "paper", "link": "#" }
+    ]
+  },
+  {
+    "title": "Pose-promote: Progressive Visual Perception for Activities of Daily Living",
+    "authors": "<strong>Qilang Ye</strong>, Zitong Yu",
+    "venue": "IEEE Signal Processing Letters (IEEE SPL)",
+    "year": "2024",
+    "highlight": "",
+    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
+    "tags": [
+      { "text": "paper", "link": "#" },
+      { "text": "Code", "link": "#" }
+    ]
+  },
+  {
+    "title": "3sG: Three-stage Guidance for Indoor Human Action Recognition",
+    "authors": "Hai Nan*, <strong>Qilang Ye*</strong>, Zitong Yu, Kang An",
+    "venue": "IET Image Processing",
+    "year": "2024",
+    "highlight": "",
+    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
+    "tags": [
+      { "text": "paper", "link": "#" },
+      { "text": "Code", "link": "#" }
+    ]
+  },
+  {
+    "title": "一种基于人体骨架的任意角度坐姿识别方法",
+    "authors": "<strong>Qilang Ye</strong>, Hai Nan, Daixin Li",
+    "venue": "中文核心",
+    "year": "2024",
+    "highlight": "",
+    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
+    "tags": [
+      { "text": "paper", "link": "#" }
+    ]
+  },
+  {
+    "title": "Diffusion Boundary: Bridging the Gap between Text-to-Image Diffusion Models and Video Understanding",
+    "authors": "<strong>Qilang Ye</strong>, Zitong Yu, et al.",
+    "venue": "Under Review",
+    "year": "2025",
+    "highlight": "",
+    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
+    "tags": [
+      { "text": "paper", "link": "#" }
+    ]
+  }
+]
