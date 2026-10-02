@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yichao Liu (刘亿超) - Academic Homepage</title>
+    <title>Yichao Liu - Academic Homepage</title>
     <meta name="description" content="Yichao Liu, master's student at Nankai University. Research in multimodal large language models, GUI grounding, table understanding, and document parsing agents.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,7 +100,6 @@
                         <!-- Name and Title -->
                         <div class="text-center mb-6">
                             <h1 class="text-3xl font-serif font-bold text-primary mb-2">Yichao Liu</h1>
-                            <p class="text-lg font-serif text-primary mb-2" lang="zh-CN">刘亿超</p>
                             <p class="text-lg text-accent font-medium mb-1">Master's Student</p>
                             <p class="text-neutral-600 mb-2">College of Computer Science<br>Nankai University</p>
                         </div>
@@ -159,41 +158,7 @@
                         <div class="section-header mb-6">
                             <h2 class="text-3xl font-serif font-bold text-primary">🚀 Research &amp; Projects</h2>
                         </div>
-                        <div class="prose max-w-none text-neutral-600 text-justify formal-font">
-                            <blockquote class="pl-4 border-l-4 border-accent/30 italic text-neutral-600 bg-neutral-50/50 p-4 rounded-r-lg mb-6">
-                                Robust visual understanding and adaptive perception for complex interfaces, tables, and documents.
-                            </blockquote>
-                            
-                            <p class="mb-8">My recent projects combine structured visual representations, dynamic region search, degradation-aware training, and tool-based agents to improve multimodal reasoning in realistic visual environments.</p>
-
-                            <div class="grid md:grid-cols-2 gap-6">
-                                <!-- Thrust 1 -->
-                                <div class="thrust-card bg-neutral-50 rounded-xl p-5 border border-neutral-100 hover:shadow-md transition-all duration-300 group flex flex-col h-full">
-                                    <h3 class="font-serif font-bold text-lg text-primary mb-4 flex items-center group-hover:text-accent transition-colors">
-                                        <i class="fas fa-project-diagram text-accent mr-2 group-hover:scale-110 transition-transform"></i> DRS-GUI: Dynamic Region Search
-                                    </h3>
-                                    <p class="text-sm leading-relaxed text-justify text-neutral-600 flex-grow">
-                                        A training-free search-then-predict framework for GUI grounding. A lightweight UI Perceptor performs Focus, Shift, and Scatter actions, scheduled by an MCTS planner with a region quality reward. On ScreenSpot-Pro, it improves Qwen2.5-VL-7B from 26.8% to 40.9% and UGround-V1-7B from 31.4% to 45.7%; it reaches 91.8% on ScreenSpot-V2 while reducing visual regions by 64% and irrelevant UI elements by 54% on average.
-                                    </p>
-                                </div>
-
-                                <!-- Thrust 2 -->
-                                <div class="thrust-card bg-neutral-50 rounded-xl p-5 border border-neutral-100 hover:shadow-md transition-all duration-300 group flex flex-col h-full">
-                                    <h3 class="font-serif font-bold text-lg text-primary mb-4 flex items-center group-hover:text-accent transition-colors">
-                                        <i class="fas fa-table text-accent mr-2 group-hover:scale-110 transition-transform"></i> WildTab: Robust Table Understanding
-                                    </h3>
-                                    <p class="text-sm leading-relaxed text-justify text-neutral-600 flex-grow">
-                                        Content-structure disentangled table understanding built on InternVL2.5-1B/4B, with the WildTU data pipeline, Content-Consistent Visual Distillation (CCVD), and a Structure-Aware Deformable Projector (SADP). On WildTU-Bench, WildTab-4B achieves 46.79% TQA, 74.65% TFV, and 14.05 BLEU for T2T. CCVD + SADP improves the 1B model's aggregate score from 21.14 to 34.10.
-                                    </p>
-                                </div>
-                                <div class="thrust-card bg-neutral-50 rounded-xl p-5 border border-neutral-100 hover:shadow-md transition-all duration-300 group flex flex-col h-full md:col-span-2">
-                                    <h3 class="font-serif font-bold text-lg text-primary mb-4 flex items-center group-hover:text-accent transition-colors">
-                                        <i class="fas fa-file-alt text-accent mr-2"></i> Adaptive Document Preprocessing Agent
-                                    </h3>
-                                    <p class="text-sm leading-relaxed text-neutral-600">A Qwen3.5-0.8B agent that selects ordered tools for geometric correction, image restoration, enhancement, and resolution adjustment before document parsing. A MonkeyDoc/olmOCR degradation pipeline and MinerU quality evaluation produced 781,287 usable training examples for supervised fine-tuning. On Real5-OmniDocBench-Warping, the SFT-stage agent with MinerU improves the aggregate score from 88.51 to 91.52, reduces text edit distance from 0.1029 to 0.0556, and improves formula CDM and table TEDS by 1.68 and 2.64 points. Online GRPO policy optimization is a planned next step.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="research-projects-reserved"><!-- Reserved for future projects. --></div>
                     </section>
 
                     <!-- News Section -->

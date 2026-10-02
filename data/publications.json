@@ -1,6 +1,9 @@
 [
   {
     "title": "DRS-GUI: Dynamic Region Search for Training-Free GUI Grounding",
+    "thumbnail": "assets/publications/drs-gui-framework.png",
+    "thumbnailAlt": "DRS-GUI processing pipeline with UI perception and dynamic region search",
+    "thumbnailSource": "https://arxiv.org/html/2605.15542v1",
     "authors": "<strong>Yichao Liu</strong>, Huawen Shen, Liu Yu, Shiyu Liu, Zeyu Chen, Yu Zhou",
     "venue": "CVPR",
     "year": "2026",
@@ -55,6 +58,9 @@
   },
   {
     "title": "CROSS: Cascaded Distillation and Dual-Constraint Grounding for Remote Sensing Referring Segmentation",
+    "thumbnail": "assets/publications/cross-framework.png",
+    "thumbnailAlt": "CROSS framework with cascaded distillation and perspective-spatial contrastive learning",
+    "thumbnailSource": "https://arxiv.org/html/2608.03147v2",
     "authors": "Tingzhang Luo*, Ruizhong Liu*, <strong>Yichao Liu</strong>, Cheng Fan, Yu Liu, Jianyuan Guo",
     "venue": "ECCV",
     "year": "2026",

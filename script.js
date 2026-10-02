@@ -284,11 +284,19 @@ function renderPublications(publications, publicationsList) {
                     if (pub.thumbnail) {
                         li.classList.add('with-thumbnail-expanded');
 
-                        thumbBox = document.createElement('div');
+                        const siteRoot = new URL(document.body.classList.contains('archive-page') ? '../' : './', window.location.href);
+                        const imageURL = new URL(pub.thumbnail, siteRoot).href;
+                        thumbBox = document.createElement('a');
                         thumbBox.className = 'pub-thumbnail-box';
+                        thumbBox.href = imageURL;
+                        thumbBox.target = '_blank';
+                        thumbBox.rel = 'noopener noreferrer';
+                        thumbBox.title = 'Open full-size paper figure';
                         const thumbImg = document.createElement('img');
-                        thumbImg.src = pub.thumbnail;
-                        thumbImg.alt = 'Publication Thumbnail';
+                        thumbImg.src = imageURL;
+                        thumbImg.alt = pub.thumbnailAlt || `Figure from ${pub.title}`;
+                        thumbImg.loading = 'lazy';
+                        thumbImg.decoding = 'async';
                         thumbBox.appendChild(thumbImg);
                     }
                     

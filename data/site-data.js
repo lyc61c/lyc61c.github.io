@@ -3,6 +3,9 @@ window.homepageData = {
   "publications": [
     {
       "title": "DRS-GUI: Dynamic Region Search for Training-Free GUI Grounding",
+      "thumbnail": "assets/publications/drs-gui-framework.png",
+      "thumbnailAlt": "DRS-GUI processing pipeline with UI perception and dynamic region search",
+      "thumbnailSource": "https://arxiv.org/html/2605.15542v1",
       "authors": "<strong>Yichao Liu</strong>, Huawen Shen, Liu Yu, Shiyu Liu, Zeyu Chen, Yu Zhou",
       "venue": "CVPR",
       "year": "2026",
@@ -57,6 +60,9 @@ window.homepageData = {
     },
     {
       "title": "CROSS: Cascaded Distillation and Dual-Constraint Grounding for Remote Sensing Referring Segmentation",
+      "thumbnail": "assets/publications/cross-framework.png",
+      "thumbnailAlt": "CROSS framework with cascaded distillation and perspective-spatial contrastive learning",
+      "thumbnailSource": "https://arxiv.org/html/2608.03147v2",
       "authors": "Tingzhang Luo*, Ruizhong Liu*, <strong>Yichao Liu</strong>, Cheng Fan, Yu Liu, Jianyuan Guo",
       "venue": "ECCV",
       "year": "2026",
@@ -95,58 +101,58 @@ window.homepageData = {
   "honors": [
     {
       "date": "",
-      "title": "第十九届挑战杯“揭榜挂帅”专项赛 · 全国特等奖",
-      "org": "团队竞赛"
+      "title": "National Grand Prize, 19th Challenge Cup Special Competition",
+      "org": "Team competition"
     },
     {
       "date": "2024",
-      "title": "中国国际大学生创新创业大赛 · 全国银奖",
-      "org": "团队竞赛"
+      "title": "National Silver Award, China International College Students' Innovation and Entrepreneurship Competition",
+      "org": "Team competition"
     },
     {
       "date": "",
-      "title": "华为 ICT 大赛 · 全国二等奖",
-      "org": "团队竞赛"
+      "title": "National Second Prize, Huawei ICT Competition",
+      "org": "Team competition"
     },
     {
       "date": "2024",
-      "title": "Kaggle BirdCLEF · 银牌",
-      "org": "团队竞赛 · 40 / 974"
+      "title": "Silver Medal, Kaggle BirdCLEF",
+      "org": "Team competition · 40 / 974"
     },
     {
       "date": "2024",
-      "title": "Kaggle March Machine Learning Mania · 铜牌",
-      "org": "团队竞赛 · 94 / 820"
+      "title": "Bronze Medal, Kaggle March Machine Learning Mania",
+      "org": "Team competition · 94 / 820"
     },
     {
       "date": "",
-      "title": "国家奖学金",
-      "org": "荣誉奖项"
+      "title": "National Scholarship",
+      "org": "Honors and awards"
     },
     {
       "date": "",
-      "title": "国家励志奖学金",
-      "org": "荣誉奖项"
+      "title": "National Encouragement Scholarship",
+      "org": "Honors and awards"
     },
     {
       "date": "",
-      "title": "华为奖学金",
-      "org": "荣誉奖项"
+      "title": "Huawei Scholarship",
+      "org": "Honors and awards"
     },
     {
       "date": "",
-      "title": "院士奖学金",
-      "org": "荣誉奖项"
+      "title": "Academician Scholarship",
+      "org": "Honors and awards"
     },
     {
       "date": "",
-      "title": "本科优秀毕业生",
-      "org": "荣誉奖项"
+      "title": "Outstanding Undergraduate Graduate",
+      "org": "Honors and awards"
     },
     {
       "date": "",
-      "title": "华为智能基座“未来之星”",
-      "org": "荣誉奖项"
+      "title": "Huawei Intelligent Base 'Future Star' Award",
+      "org": "Honors and awards"
     }
   ],
   "news": [

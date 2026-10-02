@@ -473,6 +473,12 @@ details summary {
 /* Publication Thumbnail & Layout */
 .pub-content-wrapper {
     width: 100%;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.research-projects-reserved {
+    min-height: 1.5rem;
 }
 
 .pub-list-item.with-thumbnail-expanded {
@@ -488,6 +494,7 @@ details summary {
 
 .pub-thumbnail-box {
     width: 200px; /* Fixed width for thumbnail */
+    display: block;
     flex-shrink: 0;
     order: -1; /* Move to the left */
     border: none;
@@ -503,6 +510,11 @@ details summary {
     display: block;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pub-thumbnail-box:focus-visible {
+    outline: 2px solid #b88a4d;
+    outline-offset: 4px;
 }
 
 .pub-list-item.with-thumbnail-expanded .pub-content-wrapper {
