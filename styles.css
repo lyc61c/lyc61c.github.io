@@ -406,6 +406,64 @@ details summary {
     white-space: nowrap;
 }
 
+.honor-item:has(.honor-year:empty) {
+    grid-template-columns: 1fr;
+}
+
+.honor-year:empty {
+    display: none;
+}
+
+/* Archive pages share the homepage data and typography. */
+.archive-page {
+    margin: 0;
+    background: #fefffe;
+}
+
+.archive-nav, .archive-content, .archive-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.archive-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.archive-nav a {
+    color: #1e293b;
+    text-decoration: none;
+}
+
+.archive-nav a:first-child {
+    font-family: 'Crimson Text', serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.archive-content h1 {
+    font-size: 32px;
+    margin: 16px 0 24px;
+}
+
+.archive-note, .archive-footer {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.archive-content .news-item {
+    margin-bottom: 16px;
+}
+
+.archive-footer {
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+}
+
 .honor-content h3 {
     font-size: 1rem;
     font-weight: 600;

@@ -1,71 +1,92 @@
 [
   {
-    "title": "CAT: Enhancing Multimodal Large Language Model to Answer Questions in Dynamic Audio-Visual Scenarios",
-    "authors": "<strong>Qilang Ye</strong>, Zitong Yu, Rui Shao, Xinyu Xie, Philip Torr, Xiaochun Cao",
-    "venue": "European Conference on Computer Vision (ECCV), 2024.",
-    "year": "2024",
-    "highlight": "",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
+    "title": "DRS-GUI: Dynamic Region Search for Training-Free GUI Grounding",
+    "authors": "<strong>Yichao Liu</strong>, Huawen Shen, Liu Yu, Shiyu Liu, Zeyu Chen, Yu Zhou",
+    "venue": "CVPR",
+    "year": "2026",
+    "contribution": "First author",
     "tags": [
-      { "text": "paper", "link": "#" },
-      { "text": "Code", "link": "#" }
-    ]
+      {
+        "text": "Paper",
+        "link": "https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_DRS-GUI_Dynamic_Region_Search_for_Training-Free_GUI_Grounding_CVPR_2026_paper.pdf"
+      },
+      {
+        "text": "arXiv",
+        "link": "https://arxiv.org/abs/2605.15542"
+      },
+      {
+        "text": "Code",
+        "link": "https://github.com/lyc61c/DRS-GUI"
+      }
+    ],
+    "ccf": "A"
   },
   {
-    "title": "CAT+: Investigating and Enhancing Audio-visual Understanding in Large Language Models",
-    "authors": "<strong>Qilang Ye</strong>, Zitong Yu, Xin Liu",
-    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025.3582389",
+    "title": "WildTab: Decoupling Content and Structure for Robust Multimodal Table Understanding in the Wild",
+    "authors": "<strong>Yichao Liu</strong>, G. Li, M. Huang, Z. Chen, Y. Zhou",
+    "venue": "ACM MM",
+    "year": "2026",
+    "contribution": "First author",
+    "tags": [
+      {
+        "text": "Lab",
+        "link": "https://intimelab.github.io/publications/"
+      }
+    ],
+    "ccf": "A"
+  },
+  {
+    "title": "Stroke-Based Perception: Discover Novel Oracle Characters",
+    "authors": "T. Luo, <strong>Yichao Liu*</strong>, Y. Xu, R. Liu, X. Wang, H. Zeng, S. Huang, H. Zhang",
+    "venue": "IEEE Transactions on Multimedia (TMM)",
+    "year": "2026",
+    "contribution": "Co-first author",
+    "tags": [
+      {
+        "text": "DOI",
+        "link": "https://doi.org/10.1109/TMM.2026.3685003"
+      },
+      {
+        "text": "Code",
+        "link": "https://github.com/Clarence-CV/Oracle_GCD"
+      }
+    ],
+    "ccf": "A"
+  },
+  {
+    "title": "CROSS: Cascaded Distillation and Dual-Constraint Grounding for Remote Sensing Referring Segmentation",
+    "authors": "Tingzhang Luo*, Ruizhong Liu*, <strong>Yichao Liu</strong>, Cheng Fan, Yu Liu, Jianyuan Guo",
+    "venue": "ECCV",
+    "year": "2026",
+    "contribution": "Third author",
+    "tags": [
+      {
+        "text": "arXiv",
+        "link": "https://arxiv.org/abs/2608.03147"
+      },
+      {
+        "text": "Project",
+        "link": "https://clarence-cv.github.io/CROSS/"
+      }
+    ],
+    "ccf": "B"
+  },
+  {
+    "title": "Linking Known and Unknown: Generalized Cross-Instance Feature Helps Category Discovery",
+    "authors": "Yuanhao Zuo, <strong>Yichao Liu*</strong>, Xiwei Liu, Tingzhang Luo",
+    "venue": "ICASSP",
     "year": "2025",
-    "highlight": "",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
+    "contribution": "Co-first author",
     "tags": [
-      { "text": "paper", "link": "#" }
-    ]
-  },
-  {
-    "title": "Pose-promote: Progressive Visual Perception for Activities of Daily Living",
-    "authors": "<strong>Qilang Ye</strong>, Zitong Yu",
-    "venue": "IEEE Signal Processing Letters (IEEE SPL)",
-    "year": "2024",
-    "highlight": "",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
-    "tags": [
-      { "text": "paper", "link": "#" },
-      { "text": "Code", "link": "#" }
-    ]
-  },
-  {
-    "title": "3sG: Three-stage Guidance for Indoor Human Action Recognition",
-    "authors": "Hai Nan*, <strong>Qilang Ye*</strong>, Zitong Yu, Kang An",
-    "venue": "IET Image Processing",
-    "year": "2024",
-    "highlight": "",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
-    "tags": [
-      { "text": "paper", "link": "#" },
-      { "text": "Code", "link": "#" }
-    ]
-  },
-  {
-    "title": "一种基于人体骨架的任意角度坐姿识别方法",
-    "authors": "<strong>Qilang Ye</strong>, Hai Nan, Daixin Li",
-    "venue": "中文核心",
-    "year": "2024",
-    "highlight": "",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
-    "tags": [
-      { "text": "paper", "link": "#" }
-    ]
-  },
-  {
-    "title": "Diffusion Boundary: Bridging the Gap between Text-to-Image Diffusion Models and Video Understanding",
-    "authors": "<strong>Qilang Ye</strong>, Zitong Yu, et al.",
-    "venue": "Under Review",
-    "year": "2025",
-    "highlight": "",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
-    "tags": [
-      { "text": "paper", "link": "#" }
-    ]
+      {
+        "text": "DOI",
+        "link": "https://doi.org/10.1109/ICASSP49660.2025.10889500"
+      },
+      {
+        "text": "DBLP",
+        "link": "https://dblp.org/rec/conf/icassp/ZuoLLL25"
+      }
+    ],
+    "ccf": "B"
   }
 ]

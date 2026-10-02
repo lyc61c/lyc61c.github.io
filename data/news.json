@@ -1,14 +1,12 @@
 [
   {
-    "date": "2025-01-01",
-    "content": "Welcome to my new academic homepage! This template is available on GitHub.",
-    "links": [
-        { "text": "GitHub", "url": "https://github.com/yihangtao/AcaNova-X" }
-    ]
+    "date": "2025-09",
+    "content": "I started my master's studies in Computer Science and Technology at Nankai University.",
+    "links": []
   },
   {
-     "date": "2024-12-15",
-     "content": "One paper titled 'A Novel Approach to AI' was accepted to CVPR 2025!",
-     "links": []
+    "date": "2025-06",
+    "content": "I completed my bachelor's degree in Computer Science and Technology (Big Data track) at China University of Geosciences (Wuhan).",
+    "links": []
   }
 ]

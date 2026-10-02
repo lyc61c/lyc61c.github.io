@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) yearElement.textContent = new Date().getFullYear();
+
     // Make all links open in a new tab
     makeAllLinksOpenInNewTab();
 
@@ -40,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 if (targetSection) {
                     // Account for the sticky nav
-                    const navHeight = document.querySelector('.top-nav').offsetHeight;
+                    const navHeight = document.querySelector('.top-nav')?.offsetHeight || 0;
                     const targetPosition = targetSection.offsetTop - navHeight - 20;
                     
                     window.scrollTo({
@@ -60,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         let current = '';
         const sections = document.querySelectorAll('section[id]');
-        const navHeight = document.querySelector('.top-nav').offsetHeight;
+        const navHeight = document.querySelector('.top-nav')?.offsetHeight || 0;
         
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
@@ -90,18 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Fallback news data
-    var fallbackNews = [
-      {
-        "date": "2025-01-01",
-        "content": "Welcome to my new academic homepage!",
-        "links": []
-      },
-      {
-        "date": "2024-12-15",
-        "content": "One paper accepted to CVPR 2025!",
-        "links": []
-      }
-    ];
+    const fallbackNews = window.homepageData.news;
 
     fetch(newsJsonPath)
         .then(response => response.json())
@@ -131,18 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Fallback honors data
-    var fallbackHonors = [
-      {
-        "date": "2025",
-        "title": "Best Paper Award",
-        "org": "International Conference on Computer Vision (ICCV)"
-      },
-      {
-        "date": "2024",
-        "title": "Outstanding PhD Student Award",
-        "org": "Your University"
-      }
-    ];
+    const fallbackHonors = window.homepageData.honors;
 
     fetch(honorsJsonPath)
         .then(response => response.json())
@@ -167,77 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Fallback publications data (used when fetch fails, e.g., local file:// protocol)
-var fallbackPublications = [
-  {
-    "title": "CAT: Enhancing Multimodal Large Language Model to Answer Questions in Dynamic Audio-Visual Scenarios",
-    "authors": "<strong>Qilang Ye</strong>, Zitong Yu, Rui Shao, Xinyu Xie, Philip Torr, Xiaochun Cao",
-    "venue": "European Conference on Computer Vision (ECCV), 2024.",
-    "year": "2024",
-    "highlight": "",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
-    "tags": [
-      { "text": "paper", "link": "#" },
-      { "text": "Code", "link": "#" }
-    ]
-  },
-  {
-    "title": "CAT+: Investigating and Enhancing Audio-visual Understanding in Large Language Models",
-    "authors": "<strong>Qilang Ye</strong>, Zitong Yu, Xin Liu",
-    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025.3582389",
-    "year": "2025",
-    "highlight": "",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
-    "tags": [
-      { "text": "paper", "link": "#" }
-    ]
-  },
-  {
-    "title": "Pose-promote: Progressive Visual Perception for Activities of Daily Living",
-    "authors": "<strong>Qilang Ye</strong>, Zitong Yu",
-    "venue": "IEEE Signal Processing Letters (IEEE SPL)",
-    "year": "2024",
-    "highlight": "",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
-    "tags": [
-      { "text": "paper", "link": "#" },
-      { "text": "Code", "link": "#" }
-    ]
-  },
-  {
-    "title": "3sG: Three-stage Guidance for Indoor Human Action Recognition",
-    "authors": "Hai Nan*, <strong>Qilang Ye*</strong>, Zitong Yu, Kang An",
-    "venue": "IET Image Processing",
-    "year": "2024",
-    "highlight": "",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
-    "tags": [
-      { "text": "paper", "link": "#" },
-      { "text": "Code", "link": "#" }
-    ]
-  },
-  {
-    "title": "一种基于人体骨架的任意角度坐姿识别方法",
-    "authors": "<strong>Qilang Ye</strong>, Hai Nan, Daixin Li",
-    "venue": "中文核心",
-    "year": "2024",
-    "highlight": "",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
-    "tags": [
-      { "text": "paper", "link": "#" }
-    ]
-  },
-  {
-    "title": "Diffusion Boundary: Bridging the Gap between Text-to-Image Diffusion Models and Video Understanding",
-    "authors": "<strong>Qilang Ye</strong>, Zitong Yu, et al.",
-    "venue": "Under Review",
-    "year": "2025",
-    "highlight": "",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
-    "tags": [
-      { "text": "paper", "link": "#" }
-    ]
-  }
-];
+const fallbackPublications = window.homepageData.publications;
 
 // Function to load publications from JSON
 function loadPublications() {
@@ -276,7 +187,7 @@ function loadPublications() {
 function renderPublications(publications, publicationsList) {
             
             // Filter publications to show on homepage based on showOnHomepage flag
-            let pubsToShow = publications;
+            let pubsToShow = [...publications];
             
             // Sort by year descending (Preprints/Missing year at top)
             pubsToShow.sort((a, b) => {
@@ -413,7 +324,7 @@ function renderPublications(publications, publicationsList) {
                     line3.appendChild(venueNameSpan);
 
                     // 3. CCF Rank
-                    const ccfRank = getCCFRank(fullVenueName, pub.venue);
+                    const ccfRank = pub.ccf;
                     if (ccfRank) {
                         const rankSpan = document.createElement('span');
                         rankSpan.className = `ccf-rank ccf-${ccfRank.toLowerCase()}`;
@@ -421,6 +332,11 @@ function renderPublications(publications, publicationsList) {
                         line3.appendChild(rankSpan);
                     }
 
+                    if (pub.contribution) {
+                        const contribution = document.createElement('span');
+                        contribution.textContent = ' · ' + pub.contribution;
+                        line3.appendChild(contribution);
+                    }
                     contentWrapper.appendChild(line3);
                     
                     // Append wrapper and thumbnail box to LI
@@ -445,7 +361,7 @@ function getVenueShortName(venueStr, year) {
     let suffix = '';
     
     // Check if it is a conference that needs year suffix
-    const conferences = ['NeurIPS', 'CVPR', 'ICCV', 'ECCV', 'ICRA', 'AAAI', 'GLOBECOM', 'INFOCOM', 'MOBICOM'];
+    const conferences = ['NeurIPS', 'CVPR', 'ICCV', 'ECCV', 'ICRA', 'AAAI', 'ACM MM', 'ICASSP', 'GLOBECOM', 'INFOCOM', 'MOBICOM'];
     for (const conf of conferences) {
         if (s.includes(conf)) {
             // Get last two digits of year
@@ -463,6 +379,7 @@ function getVenueShortName(venueStr, year) {
     if (s.toLowerCase().includes('arxiv')) return 'ArXiv'; // No year
     
     // Journals or specific conferences
+    if (s.includes('TMM') || s.includes('Transactions on Multimedia')) return 'IEEE TMM';
     if (s.includes('TDSC')) return 'IEEE TDSC';
     if (s.includes('TMC')) return 'IEEE TMC';
     if (s.includes('JSAC')) return 'IEEE JSAC';
@@ -488,6 +405,9 @@ function getVenueFullName(venueStr, year) {
     }
 
     // Journal Full Names Mapping (No Year)
+    if (s.includes('TMM') || s.includes('Transactions on Multimedia')) return 'IEEE Transactions on Multimedia';
+    if (s.includes('ACM MM')) return `ACM International Conference on Multimedia (ACM MM${yearSuffix})`;
+    if (s.includes('ICASSP')) return `IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP${yearSuffix})`;
     if (s.includes('TDSC')) return 'IEEE Transactions on Dependable and Secure Computing';
     if (s.includes('TMC')) return 'IEEE Transactions on Mobile Computing';
     if (s.includes('JSAC')) return 'IEEE Journal on Selected Areas in Communications';

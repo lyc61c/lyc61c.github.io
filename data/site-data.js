@@ -1,0 +1,164 @@
+// Generated from data/*.json by tools/sync-site-data.mjs.
+window.homepageData = {
+  "publications": [
+    {
+      "title": "DRS-GUI: Dynamic Region Search for Training-Free GUI Grounding",
+      "authors": "<strong>Yichao Liu</strong>, Huawen Shen, Liu Yu, Shiyu Liu, Zeyu Chen, Yu Zhou",
+      "venue": "CVPR",
+      "year": "2026",
+      "contribution": "First author",
+      "tags": [
+        {
+          "text": "Paper",
+          "link": "https://openaccess.thecvf.com/content/CVPR2026/papers/Liu_DRS-GUI_Dynamic_Region_Search_for_Training-Free_GUI_Grounding_CVPR_2026_paper.pdf"
+        },
+        {
+          "text": "arXiv",
+          "link": "https://arxiv.org/abs/2605.15542"
+        },
+        {
+          "text": "Code",
+          "link": "https://github.com/lyc61c/DRS-GUI"
+        }
+      ],
+      "ccf": "A"
+    },
+    {
+      "title": "WildTab: Decoupling Content and Structure for Robust Multimodal Table Understanding in the Wild",
+      "authors": "<strong>Yichao Liu</strong>, G. Li, M. Huang, Z. Chen, Y. Zhou",
+      "venue": "ACM MM",
+      "year": "2026",
+      "contribution": "First author",
+      "tags": [
+        {
+          "text": "Lab",
+          "link": "https://intimelab.github.io/publications/"
+        }
+      ],
+      "ccf": "A"
+    },
+    {
+      "title": "Stroke-Based Perception: Discover Novel Oracle Characters",
+      "authors": "T. Luo, <strong>Yichao Liu*</strong>, Y. Xu, R. Liu, X. Wang, H. Zeng, S. Huang, H. Zhang",
+      "venue": "IEEE Transactions on Multimedia (TMM)",
+      "year": "2026",
+      "contribution": "Co-first author",
+      "tags": [
+        {
+          "text": "DOI",
+          "link": "https://doi.org/10.1109/TMM.2026.3685003"
+        },
+        {
+          "text": "Code",
+          "link": "https://github.com/Clarence-CV/Oracle_GCD"
+        }
+      ],
+      "ccf": "A"
+    },
+    {
+      "title": "CROSS: Cascaded Distillation and Dual-Constraint Grounding for Remote Sensing Referring Segmentation",
+      "authors": "Tingzhang Luo*, Ruizhong Liu*, <strong>Yichao Liu</strong>, Cheng Fan, Yu Liu, Jianyuan Guo",
+      "venue": "ECCV",
+      "year": "2026",
+      "contribution": "Third author",
+      "tags": [
+        {
+          "text": "arXiv",
+          "link": "https://arxiv.org/abs/2608.03147"
+        },
+        {
+          "text": "Project",
+          "link": "https://clarence-cv.github.io/CROSS/"
+        }
+      ],
+      "ccf": "B"
+    },
+    {
+      "title": "Linking Known and Unknown: Generalized Cross-Instance Feature Helps Category Discovery",
+      "authors": "Yuanhao Zuo, <strong>Yichao Liu*</strong>, Xiwei Liu, Tingzhang Luo",
+      "venue": "ICASSP",
+      "year": "2025",
+      "contribution": "Co-first author",
+      "tags": [
+        {
+          "text": "DOI",
+          "link": "https://doi.org/10.1109/ICASSP49660.2025.10889500"
+        },
+        {
+          "text": "DBLP",
+          "link": "https://dblp.org/rec/conf/icassp/ZuoLLL25"
+        }
+      ],
+      "ccf": "B"
+    }
+  ],
+  "honors": [
+    {
+      "date": "",
+      "title": "第十九届挑战杯“揭榜挂帅”专项赛 · 全国特等奖",
+      "org": "团队竞赛"
+    },
+    {
+      "date": "2024",
+      "title": "中国国际大学生创新创业大赛 · 全国银奖",
+      "org": "团队竞赛"
+    },
+    {
+      "date": "",
+      "title": "华为 ICT 大赛 · 全国二等奖",
+      "org": "团队竞赛"
+    },
+    {
+      "date": "2024",
+      "title": "Kaggle BirdCLEF · 银牌",
+      "org": "团队竞赛 · 40 / 974"
+    },
+    {
+      "date": "2024",
+      "title": "Kaggle March Machine Learning Mania · 铜牌",
+      "org": "团队竞赛 · 94 / 820"
+    },
+    {
+      "date": "",
+      "title": "国家奖学金",
+      "org": "荣誉奖项"
+    },
+    {
+      "date": "",
+      "title": "国家励志奖学金",
+      "org": "荣誉奖项"
+    },
+    {
+      "date": "",
+      "title": "华为奖学金",
+      "org": "荣誉奖项"
+    },
+    {
+      "date": "",
+      "title": "院士奖学金",
+      "org": "荣誉奖项"
+    },
+    {
+      "date": "",
+      "title": "本科优秀毕业生",
+      "org": "荣誉奖项"
+    },
+    {
+      "date": "",
+      "title": "华为智能基座“未来之星”",
+      "org": "荣誉奖项"
+    }
+  ],
+  "news": [
+    {
+      "date": "2025-09",
+      "content": "I started my master's studies in Computer Science and Technology at Nankai University.",
+      "links": []
+    },
+    {
+      "date": "2025-06",
+      "content": "I completed my bachelor's degree in Computer Science and Technology (Big Data track) at China University of Geosciences (Wuhan).",
+      "links": []
+    }
+  ]
+};

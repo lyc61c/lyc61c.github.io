@@ -1,12 +1,57 @@
 [
   {
-    "date": "2025",
-    "title": "Best Paper Award",
-    "org": "International Conference on Computer Vision (ICCV)"
+    "date": "",
+    "title": "第十九届挑战杯“揭榜挂帅”专项赛 · 全国特等奖",
+    "org": "团队竞赛"
   },
   {
     "date": "2024",
-    "title": "Outstanding PhD Student Award",
-    "org": "Your University"
+    "title": "中国国际大学生创新创业大赛 · 全国银奖",
+    "org": "团队竞赛"
+  },
+  {
+    "date": "",
+    "title": "华为 ICT 大赛 · 全国二等奖",
+    "org": "团队竞赛"
+  },
+  {
+    "date": "2024",
+    "title": "Kaggle BirdCLEF · 银牌",
+    "org": "团队竞赛 · 40 / 974"
+  },
+  {
+    "date": "2024",
+    "title": "Kaggle March Machine Learning Mania · 铜牌",
+    "org": "团队竞赛 · 94 / 820"
+  },
+  {
+    "date": "",
+    "title": "国家奖学金",
+    "org": "荣誉奖项"
+  },
+  {
+    "date": "",
+    "title": "国家励志奖学金",
+    "org": "荣誉奖项"
+  },
+  {
+    "date": "",
+    "title": "华为奖学金",
+    "org": "荣誉奖项"
+  },
+  {
+    "date": "",
+    "title": "院士奖学金",
+    "org": "荣誉奖项"
+  },
+  {
+    "date": "",
+    "title": "本科优秀毕业生",
+    "org": "荣誉奖项"
+  },
+  {
+    "date": "",
+    "title": "华为智能基座“未来之星”",
+    "org": "荣誉奖项"
   }
 ]
