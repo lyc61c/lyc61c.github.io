@@ -170,8 +170,8 @@ details summary {
 }
 
 .pub-list-ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
+    list-style: none;
+    padding-left: 0;
 }
 
 .pub-list-item {
@@ -482,20 +482,27 @@ details summary {
 }
 
 .pub-list-item.with-thumbnail-expanded {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-    padding: 1rem;
+    display: grid;
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 1rem;
+    align-items: center;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
     background-color: white;
     border: 1px solid #e2e8f0;
     border-radius: 8px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
+.pub-list-item.with-thumbnail-expanded:last-child {
+    margin-bottom: 0;
+}
+
 .pub-thumbnail-box {
-    width: 200px; /* Fixed width for thumbnail */
+    width: 200px;
+    height: 120px;
+    max-width: 100%;
     display: block;
-    flex-shrink: 0;
     order: -1; /* Move to the left */
     border: none;
     padding: 0;
@@ -506,7 +513,9 @@ details summary {
 
 .pub-thumbnail-box img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
     display: block;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -518,16 +527,16 @@ details summary {
 }
 
 .pub-list-item.with-thumbnail-expanded .pub-content-wrapper {
-    flex-grow: 1;
+    align-self: center;
 }
 
 /* Adjust text spacing in expanded mode */
 .pub-list-item.with-thumbnail-expanded .pub-line-1 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 .pub-list-item.with-thumbnail-expanded .pub-title-text {
-    font-size: 1.1rem; /* Larger title in expanded mode */
+    font-size: 1rem;
 }
 
 .pub-btn-preview {
@@ -543,11 +552,7 @@ details summary {
 /* Make sure mobile layout stacks */
 @media (max-width: 640px) {
     .pub-list-item.with-thumbnail-expanded {
-        flex-direction: column;
-    }
-    .pub-thumbnail-box {
-        width: 100%;
-        max-width: 300px;
-        margin-top: 0.5rem;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.75rem;
     }
 }
