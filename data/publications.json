@@ -26,6 +26,9 @@
   },
   {
     "title": "WildTab: Decoupling Content and Structure for Robust Multimodal Table Understanding in the Wild",
+    "thumbnail": "assets/publications/wildtab-framework.png",
+    "thumbnailAlt": "WildTab framework with content-consistent visual distillation and a structure-aware deformable projector",
+    "thumbnailSource": "Author-provided figure",
     "authors": "<strong>Yichao Liu</strong>, G. Li, M. Huang, Z. Chen, Y. Zhou",
     "venue": "ACM MM",
     "year": "2026",
@@ -40,6 +43,9 @@
   },
   {
     "title": "Stroke-Based Perception: Discover Novel Oracle Characters",
+    "thumbnail": "assets/publications/stroke-based-perception-framework.png",
+    "thumbnailAlt": "Stroke-Based Perception framework for oracle character discovery with character, stroke, and feature-level constraints",
+    "thumbnailSource": "Author-provided figure",
     "authors": "T. Luo, <strong>Yichao Liu*</strong>, Y. Xu, R. Liu, X. Wang, H. Zeng, S. Huang, H. Zhang",
     "venue": "IEEE Transactions on Multimedia (TMM)",
     "year": "2026",
@@ -79,6 +85,9 @@
   },
   {
     "title": "Linking Known and Unknown: Generalized Cross-Instance Feature Helps Category Discovery",
+    "thumbnail": "assets/publications/linking-known-unknown-framework.png",
+    "thumbnailAlt": "Generalized cross-instance feature framework linking known and unknown categories through labeled and unlabeled image mixing",
+    "thumbnailSource": "Author-provided figure",
     "authors": "Yuanhao Zuo, <strong>Yichao Liu*</strong>, Xiwei Liu, Tingzhang Luo",
     "venue": "ICASSP",
     "year": "2025",
